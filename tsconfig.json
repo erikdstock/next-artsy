@@ -1,0 +1,45 @@
+{
+  "compilerOptions": {
+    "esModuleInterop": true,
+    "baseUrl": "src",
+    "declaration": true,
+    "downlevelIteration": true,
+    "experimentalDecorators": true,
+    "jsx": "preserve",
+    "lib": ["dom", "es2015", "es2016", "es2017", "esnext.asynciterable"],
+    "module": "esnext",
+    "moduleResolution": "node",
+    "noUnusedLocals": true,
+    "outDir": "dist",
+    "paths": {
+      "storybook/*": ["./__stories__/*"],
+      "Analytics/*": ["./Analytics/*"],
+      "Assets/*": ["./Assets/*"],
+      "Components/*": ["./Components/*"],
+      "Styleguide/*": ["./Styleguide/*"],
+      "package.json": ["./package.json"]
+    },
+    "plugins": [
+      {
+        "name": "typescript-styled-plugin"
+      }
+    ],
+    "pretty": true,
+    "sourceMap": true,
+    "target": "es2015",
+    "allowJs": true,
+    "skipLibCheck": true,
+    "strict": false,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true
+  },
+  "include": [
+    "pages/**/*",
+    "components/**/*",
+    "util/**/*",
+    "next.config.js",
+    "next-env.d.ts"
+  ]
+}
